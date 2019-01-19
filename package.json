@@ -1,0 +1,26 @@
+{
+    "name": "node_react_startup_structure",
+    "version": "1.0.0",
+    "description": "The Node React Startup Structure",
+    "main": "server/app.js",
+    "scripts": {
+        "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start:prod": "cd Server && npm run start",
+        "start:dev": "concurrently \"npm run server\" \"npm run client\" -k",
+        "client": "cd client && npm run start",
+        "server": "cd Server && npm run dev",
+        "install": "cd Client && npm install && cd ../Server && npm install",
+        "build": "cd Client && npm run build"
+    },
+    "author": "Anthony Rivas",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/anthonyrivas/CommunicusQuestionLibrary/issues"
+    },
+    "devDependencies": {
+        "concurrently": "^4.1.0"
+    },
+    "dependencies": {
+        "if-env": "^1.0.4"
+    }
+}

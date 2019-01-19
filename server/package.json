@@ -1,0 +1,20 @@
+{
+    "name": "node_react_startup_structure_server",
+    "version": "1.0.0",
+    "description": "The server for the Node React Startup Structure",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "author": "Anthony Rivas",
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^1.18.9"
+    },
+    "dependencies": {
+        "express": "^4.16.4",
+        "morgan": "^1.9.1",
+        "path": "^0.12.7"
+    }
+}
