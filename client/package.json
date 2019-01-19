@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The client for the Node React Startup Structure - created with create-react-app",
   "private": true,
-  "proxy": 3001,
+  "proxy": "3001",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
