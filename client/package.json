@@ -5,9 +5,9 @@
   "private": true,
   "proxy": "3001",
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-scripts": "^2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
