@@ -11,16 +11,16 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 // Serve our static build files
-app.use(express.static(path.join(__dirname, '../Client/build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 // Provides great rout logging in our console for debugging
 app.use(morgan('dev'));
 
 // Import the routing setup from our Router 
 app.use('/', router);
 
-//Serving react on routs unused by previous routing
+//Serving react on routes unused by previous routing
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../Client/build/index.html'));
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 //Startup
