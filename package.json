@@ -5,10 +5,10 @@
     "main": "server/app.js",
     "scripts": {
         "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-        "start:prod": "cd Server && npm run start",
+        "start:prod": "cd server && npm run start",
         "start:dev": "concurrently \"npm run server\" \"npm run client\" -k",
         "client": "cd client && npm run start",
-        "server": "cd Server && npm run dev",
+        "server": "cd server && npm run dev",
         "install": "cd client && npm install && cd ../server && npm install",
         "build": "cd client && npm run build"
     },
