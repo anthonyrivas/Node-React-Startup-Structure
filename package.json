@@ -18,7 +18,7 @@
         "url": "https://github.com/anthonyrivas/CommunicusQuestionLibrary/issues"
     },
     "devDependencies": {
-        "concurrently": "^4.1.0"
+        "concurrently": "^4.1.2"
     },
     "dependencies": {
         "if-env": "^1.0.4"

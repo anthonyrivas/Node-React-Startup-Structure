@@ -10,10 +10,10 @@
     "author": "Anthony Rivas",
     "license": "MIT",
     "devDependencies": {
-        "nodemon": "^1.18.9"
+        "nodemon": "^1.19.4"
     },
     "dependencies": {
-        "express": "^4.16.4",
+        "express": "^4.17.1",
         "morgan": "^1.9.1",
         "path": "^0.12.7"
     }
