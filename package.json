@@ -15,7 +15,7 @@
     "author": "Anthony Rivas",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/anthonyrivas/CommunicusQuestionLibrary/issues"
+        "url": "https://github.com/anthonyrivas/Node-React-Startup-Structure/issues"
     },
     "devDependencies": {
         "concurrently": "^4.1.2"

@@ -1,4 +1,4 @@
-## Communicus Question Library Server Side
+## Server Side
 
 ### Available endpoints:
 
