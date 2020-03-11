@@ -1,35 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {useLayoutEffect, useState} from 'react';
 import './App.css';
 import axios from 'axios';
 
-class App extends Component {
-  componentDidMount() {
+function App () {
+  const [randomStr, setRandomStr] = useState('');
+  useLayoutEffect(() => {
     axios.get('/api/json')
     .then(res => {
-      console.log(res.data);
+      setRandomStr(res.data.test)
     })
-  }
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Welcome <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+  })
+  return (
+    <div>
+      {randomStr}
+    </div>
+  );
 }
 
 export default App;
